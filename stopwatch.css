@@ -1,0 +1,124 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: rgb(104, 101, 101);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  margin: 10px 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 20%;
+}
+.heading {
+  text-transform: uppercase;
+  text-align: center;
+  margin-right: 100px;
+}
+.timer {
+  display: flex;
+  flex-direction: row;
+}
+.t {
+  font-size: 4rem;
+  color: rgb(0, 0, 0);
+}
+.count2 {
+  font-size: 1.5rem;
+}
+.time::after {
+  content: ":";
+}
+.second::after {
+  content: ".";
+}
+.count2 {
+  position: relative;
+  margin-top: 37px;
+  height: 25px;
+}
+.splittext {
+  font-size: 1.5rem;
+  color: rgb(255, 197, 5);
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 350px;
+}
+.btn {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin: 0px 5px;
+  border: none;
+}
+.btn:first-child {
+  margin-left: 0;
+}
+.btn-inactive {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgba(125, 125, 128, 0.5);
+  color: rgba(125, 125, 128, 0.5);
+}
+.startbtn {
+  background-color: rgb(48, 207, 186);
+  color: rgb(255, 255, 255);
+}
+.pause {
+  background-color: rgb(252, 128, 211);
+  color: rgb(255, 255, 255);
+  margin-left: 0;
+}
+.split-active {
+  border: none;
+  background-color: rgb(255, 197, 5);
+  color: rgb(255, 255, 255);
+}
+.reset-active {
+  border: none;
+  background-color: rgb(61, 130, 219);
+  color: rgb(255, 255, 255);
+}
+.timerecord {
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column;
+  width: 500px;
+  height: 2rem;
+  border-top: 2px solid rgba(125, 125, 128, 0.5);
+  padding-top: 10px;
+  align-items: center;
+}
+.timerecord-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.timerecord-Number {
+  flex: 30%;
+  text-align: centre;
+}
+.timerecord-time {
+  flex: 40%;
+  text-align: centre;
+}
+.timerecord-type {
+  flex: 30%;
+  text-align: centre;
+  padding-right: 20px;
+}
+.hidden {
+  display: none;
+}
+.pauseclr {
+  color: rgb(252, 128, 211);
+}
+.splitclr {
+  color: rgb(255, 197, 5);
+}

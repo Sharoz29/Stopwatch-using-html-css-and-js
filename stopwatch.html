@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stopwatch.css" />
+    <script defer src="stopwatch.js"></script>
+    <title>Stop Watch</title>
+  </head>
+  <body>
+    <h1 class="heading">Timer⌛</h1>
+    <div class="container">
+      <div class="timer">
+        <span class="hour t time">00</span>
+        <span class="minute t time">00</span>
+        <span class="second t">00</span>
+        <span class="count1 t">0</span>
+        <span class="count2">00</span>
+      </div>
+      <div class="splittext" id="split">split time</div>
+      <div class="buttons">
+        <button class="startbtn btn" id="startbtn">Start</button>
+        <button class="pause btn hidden">Pause</button>
+        <button class="btn splitbtn btn-inactive">Split</button>
+        <button class="btn resetbtn btn-inactive">Reset</button>
+      </div>
+      <div class="timerecord">
+        <!-- <div class="timerecord-container">
+          <div class="timerecord-Number">1</div>
+          <div class="timerecord-time">00:00:16:624</div>
+          <div class="timerecord-type">Pause</div>
+        </div> -->
+      </div>
+    </div>
+  </body>
+</html>
